@@ -11,6 +11,8 @@ namespace backend.DataContext
         public DbSet<Cidade> Cidade { get; set; }
         public DbSet<Estado> Estado { get; set; }
 
+        public DbSet<Usuario> Usuario { get; set; }
+
         public AppDbContext(IConfiguration configuration)
         {
             _configuration = configuration;

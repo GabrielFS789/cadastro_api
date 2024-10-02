@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "D:\\projetos\\cadastros\\cadastro_api\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\projetos\\cadastros\\cadastro_api\\backend\\Migrations\\20241002144430_AdicionaCidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241002144430_AdicionaCidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\model\\cidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:model\\cidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\projetos\\cadastros\\cadastro_api\\backend\\Migrations\\20241002141006_AdicionaEstados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241002141006_AdicionaEstados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\migrations\\20241002140854_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:migrations\\20241002140854_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\repositories\\entidaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:repositories\\entidaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,79 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20241002144430_AdicionaCidades.cs",
-              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Migrations\\20241002144430_AdicionaCidades.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241002144430_AdicionaCidades.cs",
-              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Migrations\\20241002144430_AdicionaCidades.cs",
-              "RelativeToolTip": "Migrations\\20241002144430_AdicionaCidades.cs",
-              "ViewState": "AgIAAMsVAAAAAAAAAAAqwNAVAAAFAAAAAAAAAA==",
+              "Title": "EntidadeRepository.cs",
+              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Repositories\\EntidadeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EntidadeRepository.cs",
+              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Repositories\\EntidadeRepository.cs*",
+              "RelativeToolTip": "Repositories\\EntidadeRepository.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wDoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T14:44:30.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cidade.cs",
-              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Model\\Cidade.cs",
-              "RelativeDocumentMoniker": "Model\\Cidade.cs",
-              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Model\\Cidade.cs",
-              "RelativeToolTip": "Model\\Cidade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T14:41:06.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20241002141006_AdicionaEstados.cs",
-              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Migrations\\20241002141006_AdicionaEstados.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241002141006_AdicionaEstados.cs",
-              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Migrations\\20241002141006_AdicionaEstados.cs",
-              "RelativeToolTip": "Migrations\\20241002141006_AdicionaEstados.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAUwBIAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T14:10:06.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20241002140854_FirstMigration.cs",
-              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Migrations\\20241002140854_FirstMigration.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241002140854_FirstMigration.cs",
-              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Migrations\\20241002140854_FirstMigration.cs",
-              "RelativeToolTip": "Migrations\\20241002140854_FirstMigration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T14:08:54.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T14:02:00.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\DataContext\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "DataContext\\AppDbContext.cs",
-              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\DataContext\\AppDbContext.cs",
-              "RelativeToolTip": "DataContext\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T13:58:32.154Z",
+              "WhenOpened": "2024-10-02T20:22:58.598Z",
               "EditorCaption": ""
             }
           ]

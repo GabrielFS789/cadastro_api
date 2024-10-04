@@ -4,11 +4,11 @@ namespace backend.Repositories.InterfaceRepository
 {
     public interface IEntidadeRepository
     {
-        Task<IEnumerable<Entidade>> GetAll();
-        Task<Entidade> GetById(int id);
-        Task<Entidade> Create(Entidade entidade);
-        Task<Entidade> Update(Entidade entidade);
-        Task<Entidade> Delete(int id);
-        Task<Entidade> GetByCodigo(int codigo);
+        Task<IEnumerable<Entidade>> GetAllAsync();
+        Task<Entidade> GetByIdAsync(int id);
+        Task<Entidade> CreateAsync(Entidade entidade);
+        Entidade Update(Entidade entidade);
+        Task<Entidade> DeleteAsync(int id);
+        Task<Entidade> GetByCodigoAsync(int codigo);
     }
 }

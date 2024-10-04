@@ -16,6 +16,10 @@ namespace backend.DTOs
         [MaxLength(255, ErrorMessage = "O campo \"Endereco\" deve conter no máximo 255 caracteres")]
         public string? Endereco { get; set; }
 
+        public DateTime? DataHoraCadastro { get; private set; }
+
+        public DateTime? DataHoraUltimaAlteracao { get; private set; }
+
         public string? NumeroEndereco { get; set; }
         public string? Complemento { get; set; }
         public string? Bairro { get; set; }

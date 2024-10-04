@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\projetos\\cadastros\\cadastro_api\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\repositories\\entidaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:repositories\\entidaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EntidadeRepository.cs",
-              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Repositories\\EntidadeRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\EntidadeRepository.cs",
-              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Repositories\\EntidadeRepository.cs*",
-              "RelativeToolTip": "Repositories\\EntidadeRepository.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA5wDoAAAAJAAAAAAAAAA==",
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Services\\TokenService.cs",
+              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Services\\TokenService.cs",
+              "RelativeToolTip": "Services\\TokenService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T20:22:58.598Z",
+              "WhenOpened": "2024-10-04T13:21:09.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:18:47.427Z",
               "EditorCaption": ""
             }
           ]

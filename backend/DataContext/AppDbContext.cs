@@ -10,8 +10,9 @@ namespace backend.DataContext
         public DbSet<Entidade> Entidade { get; set; }
         public DbSet<Cidade> Cidade { get; set; }
         public DbSet<Estado> Estado { get; set; }
-
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Perfil> Perfil { get; set; }
+        public DbSet<PerfilAcesso> PerfilAcesso { get; set; }
 
         public AppDbContext(IConfiguration configuration)
         {

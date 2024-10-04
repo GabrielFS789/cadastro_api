@@ -14,79 +14,96 @@ namespace backend.Controllers
     public class EntidadeController : ControllerBase
     {
         private readonly IMapper _mapper;
-        private readonly IEntidadeRepository _entidadeRepo;
+        private readonly IUnitOfWorkRepository _unitOfWork;
 
-        public EntidadeController(IMapper mapper, IEntidadeRepository entidadeRepo)
+        public EntidadeController(IMapper mapper, IUnitOfWorkRepository unitOfWork)
         {
             _mapper = mapper;
-            _entidadeRepo = entidadeRepo;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<EntidadeDTO>>> Get()
+        public async Task<ActionResult<IEnumerable<EntidadeDTO>>> GetAllAsync()
         {
-            var entidades = await _entidadeRepo.GetAll();
+            var entidades = await _unitOfWork.EntidadeRepository.GetAllAsync();
             var entidadesDTO = _mapper.Map<IEnumerable<EntidadeDTO>>(entidades);
             return Ok(entidadesDTO);
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<EntidadeDTO>> GetById(int id)
+        public async Task<ActionResult<EntidadeDTO>> GetByIdAsync(int id)
         {
-            var entidade = await _entidadeRepo.GetById(id);
+            var entidade = await _unitOfWork.EntidadeRepository.GetByIdAsync(id);
             if (entidade is null)
                 return NotFound("Entidade não encontrada");
             return Ok(entidade);
         }
 
         [HttpPost]
-        public async Task<ActionResult<EntidadeDTO>> Create(EntidadeDTO entidadeDTO)
+        public async Task<ActionResult<EntidadeDTO>> CreateAsync(EntidadeDTO entidadeDTO)
         {
-            var entidade = _mapper.Map<Entidade>(entidadeDTO);
-            var newEntidadeDTO = await _entidadeRepo.Create(entidade);
+            try
+            {
+                var entidade = _mapper.Map<Entidade>(entidadeDTO);
+                var newEntidadeDTO = await _unitOfWork.EntidadeRepository.CreateAsync(entidade);
+                await _unitOfWork.CommitAsync();
+                return Ok(newEntidadeDTO);
 
-            return Ok(newEntidadeDTO);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        //[HttpPut("{id:int}")]
-        //public async Task<ActionResult<EntidadeDTO>> Update(int id, Entidade entidade)
-        //{
-        //    if (id != entidade.Id || entidade is null)
-        //        return BadRequest("Id informado no Header Difere do ID informado na entidade");
-        //    var newEntidade = await _entidadeRepo.Update(entidade);
-        //    var entidadeDTO = _mapper.Map<EntidadeDTO>(newEntidade);
-        //    return Ok(entidadeDTO);
-
-        //}
-
-        [HttpPatch("{id:int}")]
-        public async Task<ActionResult<EntidadeDTO>> Patch(int id, JObject value)
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<EntidadeDTO>> Update(int id, Entidade entidade)
         {
-            var entidade = await _entidadeRepo.GetById(id);
-            if (entidade is null)
-                return NotFound();
-            var dataHoraCadastro = entidade.DataHoraCadastro;
+            if (id != entidade.Id || entidade is null)
+                return BadRequest("Id informado no Header Difere do ID informado na entidade");
+            var newEntidade = _unitOfWork.EntidadeRepository.Update(entidade);
+            var entidadeDTO = _mapper.Map<EntidadeDTO>(newEntidade);
+            await _unitOfWork.CommitAsync();
+            return Ok(entidadeDTO);
+        }
 
-            foreach(var property in value.Properties())
+        [HttpPatch("{codigo:int}")]
+        public async Task<ActionResult<EntidadeDTO>> Patch(int codigo, JObject value)
+        {
+            try
             {
-                var patchDoc = new JsonPatchDocument();
-                patchDoc.Replace($"/{property.Name}", property.Value);
+                var entidade = await _unitOfWork.EntidadeRepository.GetByCodigoAsync(codigo);
+                if (entidade is null)
+                    return NotFound();
+                var dataHoraCadastro = entidade.DataHoraCadastro;
 
-                patchDoc.ApplyTo(entidade);
+                foreach (var property in value.Properties())
+                {
+                    var patchDoc = new JsonPatchDocument();
+                    patchDoc.Replace($"/{property.Name}", property.Value);
+
+                    patchDoc.ApplyTo(entidade);
+                }
+                var entidadeEditada = _unitOfWork.EntidadeRepository.Update(entidade);
+                await _unitOfWork.CommitAsync();
+                var entidadeDTO = _mapper.Map<EntidadeDTO>(entidadeEditada);
+                return Ok(entidadeDTO);
+
             }
-            entidade.DataHoraCadastro = dataHoraCadastro;
-            var entidadeEditada = await _entidadeRepo.Update(entidade);
-            var entidadeDTO = _mapper.Map<EntidadeDTO>(entidadeEditada);
-            return Ok(entidade);
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
         }
 
         [HttpDelete("{id:int}")]
         public async Task<ActionResult<EntidadeDTO>> Delete(int id)
         {
-            var entidadeDeletada = await _entidadeRepo.GetById(id);
+            var entidadeDeletada = await _unitOfWork.EntidadeRepository.GetByIdAsync(id);
             if (entidadeDeletada is null)
                 return NotFound();
-            await _entidadeRepo.Delete(id);
+            await _unitOfWork.EntidadeRepository.DeleteAsync(id);
             return Ok(entidadeDeletada);
         }
     }

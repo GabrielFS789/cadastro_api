@@ -13,27 +13,26 @@ namespace backend.Repositories
         {
             _context = context;
         }
-        public async Task<IEnumerable<Entidade>> GetAll()
+        public async Task<IEnumerable<Entidade>> GetAllAsync()
         {
             var entidades = await _context.Entidade.AsNoTracking().ToListAsync();
             return entidades;
         }
-        public async Task<Entidade> GetById(int id) {
+        public async Task<Entidade> GetByIdAsync(int id) {
             var entidade = await _context.Entidade.FirstOrDefaultAsync(x => x.Id == id);
             if (entidade is null)
                 return null;
             return entidade;
         }
-        public async Task<Entidade> Create(Entidade newEntidade) 
+        public async Task<Entidade> CreateAsync(Entidade newEntidade) 
         {
             try
             {
                 var entidadeExiste = await _context.Entidade.FirstOrDefaultAsync(e => e.Codigo == newEntidade.Codigo);
                 if (entidadeExiste != null)
                     throw new Exception($"A entidade nome {entidadeExiste.Nome} ja está usando esse código.");
-                newEntidade.DataHoraCadastro = DateTime.UtcNow;
+                newEntidade.UpdateDataHoraCadastro();
                 _context.Entidade.Add(newEntidade);
-                await _context.SaveChangesAsync();
                 return newEntidade;
             }
             catch (Exception)
@@ -42,13 +41,21 @@ namespace backend.Repositories
             }
             
         }
-        public async Task<Entidade> Update(Entidade entidade) 
+        public Entidade Update(Entidade entidade) 
         {
-            _context.Entidade.Update(entidade).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-            return entidade;
+            entidade.UpdateDataHoraUltimaAlteracao();
+            _context.Entidade.Entry(entidade).State = EntityState.Modified;
+            try
+            {
+                return entidade;
+            }
+            catch (DbUpdateException ex)
+            {
+                
+                throw new DbUpdateException(ex.Message);
+            }
         }
-        public async Task<Entidade> Delete(int id) 
+        public async Task<Entidade> DeleteAsync(int id) 
         {
             var entidade = await _context.Entidade.FindAsync(id);
             if (entidade is null)
@@ -57,7 +64,7 @@ namespace backend.Repositories
             await _context.SaveChangesAsync();
             return entidade;
         }
-        public async Task<Entidade> GetByCodigo(int codigo)
+        public async Task<Entidade> GetByCodigoAsync(int codigo)
         {
             var entidade = await _context.Entidade.FirstOrDefaultAsync(x => x.Codigo == codigo);
             if (entidade is null)

@@ -4,6 +4,8 @@ using backend.DTOs;
 using backend.Model;
 using backend.Repositories;
 using backend.Repositories.InterfaceRepository;
+using backend.Services;
+using backend.Services.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,9 +17,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IEntidadeRepository, EntidadeRepository>();
+builder.Services.AddScoped<IUnitOfWorkRepository, UnitOfWorkRepository>();
+builder.Services.AddScoped<ITokenService, TokenService>();
+
 
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddAutoMapper(typeof(EntidadeDTO));
+
+builder.Services.AddAuthentication();
+builder.Services.AddAuthentication("Bearer").AddJwtBearer();
 
 var app = builder.Build();
 

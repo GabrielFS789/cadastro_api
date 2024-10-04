@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\projetos\\cadastros\\cadastro_api\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\services\\authorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:services\\authorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\repositories\\entidaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:repositories\\entidaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\repositories\\interfacerepository\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:repositories\\interfacerepository\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\model\\perfilacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:model\\perfilacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|d:\\projetos\\cadastros\\cadastro_api\\backend\\datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1594F1E-C509-466A-A033-B2458F021535}|backend.csproj|solutionrelative:datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Repositories\\UsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\UsuarioRepository.cs",
-              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Repositories\\UsuarioRepository.cs",
-              "RelativeToolTip": "Repositories\\UsuarioRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAowBQAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\DataContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DataContext\\AppDbContext.cs",
+              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\DataContext\\AppDbContext.cs",
+              "RelativeToolTip": "DataContext\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T20:44:25.24Z",
+              "WhenOpened": "2024-10-04T13:51:23.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EntidadeRepository.cs",
-              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Repositories\\EntidadeRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\EntidadeRepository.cs",
-              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Repositories\\EntidadeRepository.cs",
-              "RelativeToolTip": "Repositories\\EntidadeRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AuthorizationService.cs",
+              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Services\\AuthorizationService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthorizationService.cs",
+              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Services\\AuthorizationService.cs",
+              "RelativeToolTip": "Services\\AuthorizationService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwAgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T20:44:16.833Z",
+              "WhenOpened": "2024-10-04T13:31:30.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IUsuarioRepository.cs",
-              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Repositories\\InterfaceRepository\\IUsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\InterfaceRepository\\IUsuarioRepository.cs",
-              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Repositories\\InterfaceRepository\\IUsuarioRepository.cs",
-              "RelativeToolTip": "Repositories\\InterfaceRepository\\IUsuarioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Title": "PerfilAcesso.cs",
+              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Model\\PerfilAcesso.cs",
+              "RelativeDocumentMoniker": "Model\\PerfilAcesso.cs",
+              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Model\\PerfilAcesso.cs",
+              "RelativeToolTip": "Model\\PerfilAcesso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T20:39:54.41Z",
+              "WhenOpened": "2024-10-04T13:30:02.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "D:\\projetos\\cadastros\\cadastro_api\\backend\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:18:47.427Z",
               "EditorCaption": ""
             }
           ]

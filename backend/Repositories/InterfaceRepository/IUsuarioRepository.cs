@@ -4,10 +4,11 @@ namespace backend.Repositories.InterfaceRepository
 {
     public interface IUsuarioRepository
     {
-        Task<IEnumerable<Usuario>> GetAll();
-        Task<Usuario> GetById(int id);
-        Task<Usuario> Create(Usuario usuario);
-        Task<Usuario> Update(Usuario usuario);
-        Task<Usuario> Delete(int id);
+        Task<IEnumerable<Usuario>> GetAllAsync();
+        Task<Usuario> GetByIdAsync(int id);
+        Task<Usuario> CreateAsync(Usuario usuario);
+        Task<Usuario> UpdateAsync(Usuario usuario);
+        Task<Usuario> DeleteAsync(int id);
+        Task<Usuario> GetByEmailAsync(string email);
     }
 }
